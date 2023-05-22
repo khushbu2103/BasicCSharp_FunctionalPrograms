@@ -11,6 +11,8 @@ namespace BasicCSharp_FunctionalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome HelloWorld");
+            Flip flip = new Flip();
+            flip.FlipCoin();
             Console.ReadLine();
         }
     }
