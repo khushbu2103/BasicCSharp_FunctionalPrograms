@@ -11,9 +11,30 @@ namespace BasicCSharp_FunctionalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome HelloWorld");
-            Flip flip = new Flip();
-            flip.FlipCoin();
-            Console.ReadLine();
+            Console.WriteLine("Choose a number to select a program");
+            Console.WriteLine("1.Flip coin\n2.Leap year");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch(option)
+            {
+                case 1:
+                    Console.WriteLine("enter the number of times you flip the coin");
+                    Flip flip = new Flip();
+                    flip.FlipCoin();
+                    Console.ReadLine();
+                    break;
+                case 2:
+                    {
+                        Console.WriteLine("Enter any year");
+                        int year = Convert.ToInt32(Console.ReadLine());
+                    LeapYear.Year(year);
+                    break;
+                    }
+                default:
+                    Console.WriteLine("please choose existing program");
+                    break;
+
+            }
+            Console.ReadLine() ;    
         }
     }
 }

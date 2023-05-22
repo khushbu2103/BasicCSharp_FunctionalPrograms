@@ -10,8 +10,7 @@ namespace BasicCSharp_FunctionalPrograms
     {
         public void FlipCoin()
         {
-            Console.WriteLine("enter the number of times you flip the coin");
-
+            
             int numberOfFlip = Convert.ToInt32(Console.ReadLine());
             int headCount = 0;
             int tailCount = 0;
