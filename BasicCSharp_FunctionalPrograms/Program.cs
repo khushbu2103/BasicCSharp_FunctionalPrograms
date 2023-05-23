@@ -12,7 +12,7 @@ namespace BasicCSharp_FunctionalPrograms
         {
             Console.WriteLine("Welcome HelloWorld");
             Console.WriteLine("Choose a number to select a program");
-            Console.WriteLine("1.Flip coin\n2.Leap year");
+            Console.WriteLine("1.Flip coin\n2.Leap year\n3.Power of 2");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -28,6 +28,13 @@ namespace BasicCSharp_FunctionalPrograms
                         int year = Convert.ToInt32(Console.ReadLine());
                     LeapYear.Year(year);
                     break;
+                    }
+                case 3:
+                    {
+                        Console.WriteLine("Enter the number");
+                        int N = Convert.ToInt32(Console.ReadLine());
+                        Power2.PowerOf2(N);
+                        break;
                     }
                 default:
                     Console.WriteLine("please choose existing program");
