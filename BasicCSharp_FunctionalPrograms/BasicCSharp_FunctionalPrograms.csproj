@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EvenOdd.cs" />
+    <Compile Include="Factor.cs" />
     <Compile Include="Flip.cs" />
+    <Compile Include="Harmonic.cs" />
+    <Compile Include="Largest.cs" />
     <Compile Include="LeapYear.cs" />
     <Compile Include="Power2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quotient_Remainder.cs" />
+    <Compile Include="Swipe.cs" />
+    <Compile Include="vowel_Consonant.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
